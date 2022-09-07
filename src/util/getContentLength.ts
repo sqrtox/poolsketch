@@ -1,15 +1,15 @@
-import type FormData from 'form-data'
+import type FormData from 'form-data';
 
 const getContentLength = (formData: FormData) => (
   new Promise<number>((resolve, reject) => formData.getLength((err, length) => {
     if (err) {
-      reject(err)
+      reject(err);
 
-      return
+      return;
     }
 
-    resolve(length)
+    resolve(length);
   }))
-)
+);
 
-export { getContentLength }
+export { getContentLength };

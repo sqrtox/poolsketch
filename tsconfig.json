@@ -3,13 +3,24 @@
     "target": "ESNext",
     "module": "CommonJS",
     "strict": true,
-    "outDir": "dist",
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist/",
+    "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-    "sourceMap": true
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "~/*": [
+        "src/*"
+      ]
+    }
   },
   "include": [
-    "src/**/*.ts"
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "./node_modules/"
   ]
 }

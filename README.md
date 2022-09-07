@@ -15,14 +15,13 @@ pnpm install poolsketch
 ## Usage
 
 ```ts
-import { Client } from 'poolsketch'
+import { Client } from 'poolsketch';
 
-const client = new Client()
+const client = new Client();
 
-client.openNote('kyunkyun05').then(async note => {
-  await note.edit({
-    content: '',
-    darkMode: true
-  })
-})
+client.notes.fetch('kyunkyun05').then(async note => {
+  const edited = await note.edit({ darkMode: true });
+
+  console.log(edited.editedAt);
+});
 ```

@@ -1,2 +1,4 @@
-export * from './Client'
-export * from './Note'
+export * from '~/client';
+export * from '~/managers';
+export * from '~/structures';
+export * from '~/util';
