@@ -2,7 +2,7 @@
 
 ## About
 
-Unofficial API wrapper for PoolSketch.
+API wrapper for PoolSketch.
 
 ## Installation
 
