@@ -18,6 +18,9 @@
     "client",
     "poolsketch"
   ],
+  "files": [
+    "./dist/"
+  ],
   "author": "sqrtox",
   "license": "Apache-2.0",
   "bugs": {
